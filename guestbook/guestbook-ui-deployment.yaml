@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: guestbook-ui
 spec:
+  - --access-control-allow-origin=*
   replicas: 2
   revisionHistoryLimit: 3
   selector:
